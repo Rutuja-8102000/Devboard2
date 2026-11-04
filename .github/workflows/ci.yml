@@ -46,9 +46,9 @@ jobs:
                 push: true
                 tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard2-frontend:latest
                   #backend:
-        # Github runner
-        #runs-on: ubuntu-latest
-        #steps:
+        #Github runner
+        runs-on: ubuntu-latest
+        steps:
             - name: Checkout Code
               uses: actions/checkout@v7
 
