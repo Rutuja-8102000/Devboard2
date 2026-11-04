@@ -44,6 +44,6 @@ jobs:
               with:
                 context: ./frontend
                 push: true
-                tags: ${{ vars.DOCKERHUB_USERNAME }}/Devboard2-frontend:latest
+                tags: ${{ vars.DOCKERHUB_USERNAME }}/learndevopsrutuja/Devboard2-frontend:latest
                 
   
