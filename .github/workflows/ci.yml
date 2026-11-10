@@ -47,6 +47,8 @@ jobs:
                 tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard2-frontend:latest
                   #backend:
         #Github runner
+        backend:
+        # Github runner
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
@@ -82,7 +84,7 @@ jobs:
               with:
                 context: ./backend
                 push: true
-                tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard2-backend:latest
+                tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-backend:latest
     deploy:
         needs: [frontend,backend]
         uses: ./.github/workflows/cd.yml
